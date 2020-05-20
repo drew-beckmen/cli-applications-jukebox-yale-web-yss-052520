@@ -60,4 +60,5 @@ def run(songs)
     #  puts "Not a valid command"
     end
   end
+  exit_jukebox
 end
