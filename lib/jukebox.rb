@@ -46,14 +46,17 @@ def run(songs)
   while command != "exit" do
     puts "Please enter a command: "
     command = gets.strip
-    if command == "help"
+    case command
+    when "help"
       help
-    elsif command == "list"
+    when "list"
       list(songs)
-    elsif command == "play"
+    when "play"
       play(songs)
+    else
+      puts "Not a valid command"
     end
-  end
+  end 
 end
 
 
