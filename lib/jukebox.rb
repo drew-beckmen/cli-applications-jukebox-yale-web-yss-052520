@@ -47,10 +47,13 @@ def run(songs)
     command = gets.strip
     if command == "help"
       help
-    elsif command == "list"
+    end
+    if command == "list"
       list(songs)
-    elsif command == "play"
+    end
+    if command == "play"
       play(songs)
+    end
   end
   exit_jukebox
 end
