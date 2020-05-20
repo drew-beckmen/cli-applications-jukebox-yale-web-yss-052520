@@ -56,8 +56,5 @@ def run(songs)
     else
       puts "Not a valid command"
     end
-  end 
+  end
 end
-
-
-run(songs)
