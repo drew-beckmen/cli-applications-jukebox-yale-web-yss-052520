@@ -23,3 +23,12 @@ def list(songs)
   songs.length.times do |index|
     puts (index + 1).to_s + ". " + songs[index]
 end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  response = gets.strip
+  if songs.include?(response)
+    puts "Playing #{response}"
+  elsif songs.to_i >= 1 && songs.to_i <= songs.length
+    puts "Playing #{songs[response - 1]}"
+end
