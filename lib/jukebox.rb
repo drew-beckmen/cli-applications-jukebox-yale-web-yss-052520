@@ -42,7 +42,7 @@ end
 
 def run(songs)
   command = ""
-  while command != "exit"
+  while command != "exit" do
     puts "Please enter a command: "
     command = gets.strip
     if command == "help"
