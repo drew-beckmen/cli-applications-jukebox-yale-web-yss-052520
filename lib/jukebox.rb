@@ -49,11 +49,9 @@ def run(songs)
     command = gets.strip
     if command == "help"
       help
-    end
-    if command == "list"
+    elsif command == "list"
       list(songs)
-    end
-    if command == "play"
+    elsif command == "play"
       play(songs)
     end
   end
