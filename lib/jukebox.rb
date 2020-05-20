@@ -56,8 +56,6 @@ def run(songs)
       list(songs)
     when "play"
       play(songs)
-  #  else
-    #  puts "Not a valid command"
     end
   end
   exit_jukebox
