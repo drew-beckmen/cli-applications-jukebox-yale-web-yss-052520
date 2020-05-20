@@ -18,3 +18,8 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+def list(songs)
+  songs.length.times do |index|
+    puts (index + 1).to_s + ". " + songs[index]
+end
