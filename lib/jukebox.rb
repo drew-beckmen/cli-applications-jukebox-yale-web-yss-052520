@@ -43,7 +43,6 @@ end
 
 def run(songs)
   command = ""
-  binding.pry
   while command != "exit" do
     puts "Please enter a command: "
     command = gets.strip
